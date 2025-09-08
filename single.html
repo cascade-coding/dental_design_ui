@@ -30,7 +30,7 @@
   <body>
     <!-- Start: Top Header -->
     <nav class="pt-0 sm:py-1 bg-primary-950 border-b-4 border-primary-100">
-      <div class="max-w-[1280px] mx-auto min-h-[100px]">
+      <div class="container mx-auto min-h-[100px]">
         <!-- Action button -->
         <div
           class="hidden lg:flex justify-end items-center gap-x-4 pt-3 px-4 mb-1.5"
@@ -223,162 +223,225 @@
     <!-- End: Top Header -->
 
     <!-- Start: Hero -->
-    <section>
-      <div class="">
-        <!-- Swiper -->
-        <div
-          class="swiper swiper-services-top bg-accent-500 !h-[492px] w-full relative"
-        >
-          <div class="swiper-wrapper relative">
-            <div class="swiper-slide relative">
-              <img src="/assets/images/services-top-1.jpg" alt="" srcset="" />
-            </div>
+    <section class="container mx-auto px-4 py-10">
+      <div
+        class="flex items-center justify-between gap-x-8 flex-col lg:flex-row gap-y-6 pt-10 sm:pt-4"
+      >
+        <div class="w-full lg:w-2/3">
+          <h2
+            class="font-primary text-3xl md:text-4xl font-bold leading-relaxed tracking-wide"
+          >
+            Dental Implants
+          </h2>
 
-            <div class="swiper-slide relative">
-              <img src="/assets/images/services-top-2.jpeg" alt="" srcset="" />
-            </div>
+          <p class="leading-relaxed mt-4 intro-detail">
+            Reliable Dental Care You Can Count On – Right Here in New York At
+            New York Dental Design, we deliver dependable, high-quality dental
+            services for patients of all ages. From regular cleanings and
+            checkups to crowns, veneers, and full restorations – we use
+            cutting-edge tools to get the job done right the first time.
+            <br /><br />
+            Need urgent care? We handle dental emergencies fast – including root
+            canals, bonding, and more. Missing teeth? We understand how that
+            affects your confidence and everyday life. Gaps from missing teeth
+            can lead to infections, shifting teeth, and problems with eating or
+            speaking. That’s why we specialize in dental implants – giving you a
+            strong, natural-looking solution that restores your bite and your
+            confidence. Our implant procedures are precise, safe, and
+            long-lasting. You have choices when it comes to dental care, and we
+            work hard to earn your trust by delivering results.
+            <br /><br />
+            We’re based in New York and take pride in building long-term
+            relationships with our patients. You’ll always get straight answers,
+            skilled care, and a clean, welcoming environment.
+            <br /><br />
+            Call (555) 123-4567 today to schedule your appointment. See why New
+            Yorkers trust us to keep their smiles strong.
+          </p>
+        </div>
+
+        <div class="w-full lg:w-1/3">
+          <img src="/assets/images/single-page-hero.png" alt="" />
+
+          <div class="w-full flex justify-center items-center">
+            <button
+              type="button"
+              class="appointment-trigger-btn w-full px-4 py-3 bg-primary-800 hover:bg-primary-900 transition-all font-primary text-lg font-medium text-neutral-50 cursor-pointer mt-4"
+            >
+              Make an Appointment
+            </button>
           </div>
-
-          <!-- Pagination Dots -->
-          <div class="swiper-pagination absolute bottom-0 py-2 w-full"></div>
         </div>
       </div>
     </section>
     <!-- End: Hero -->
 
-    <!-- Start: Services -->
-    <section class="container mx-auto px-4 py-10 pb-28">
-      <div>
-        <h3
-          class="font-primary text-3xl font-semibold text-center pb-14 pt-4 text-neutral-900"
-        >
-          Our services
-        </h3>
+    <!-- Start: Article -->
+
+    <section>
+      <div class="bg-primary-900 text-neutral-100">
+        <div class="container mx-auto px-4 py-14">
+          <h3
+            class="font-primary text-2xl md:text-3xl font-semibold leading-relaxed tracking-wide"
+          >
+            The Dental Implant Process
+          </h3>
+
+          <p class="leading-relaxed mt-3">
+            Dental implants serve as artificial tooth roots, providing a stable
+            foundation for replacement teeth. The process begins with a small
+            incision in the gum to expose the bone where the implant will be
+            placed. After insertion, the implant is secured, and the gum is
+            sutured around it. In certain cases, a temporary denture may be used
+            in place of the permanent replacement teeth.
+            <br /><br />
+            Following the procedure, the bone needs time to integrate with the
+            implant, which can take weeks or even months to fully heal. Once the
+            bone has fused securely with the implant, the final restoration can
+            be fitted. In some cases, if the jawbone is too weak, a bone graft
+            may be required to provide the necessary support. Once healing is
+            complete, an abutment is placed, allowing the final crown or
+            dentures to be attached to the implant.
+          </p>
+        </div>
       </div>
 
-      <div
-        class="flex flex-wrap gap-8 justify-center"
-        x-data="{
-            serviceCards: [
-                {
-                    title: 'Routine Dental Care',
-                    services: [
-                      'Dental Anxiety',
-                      'Dental Cleaning and Examinations',
-                      'Emergency Dental Care',
-                      'Root Canal Treatment',
-                      'Tooth Extraction'
-                    ],
-                    bg: 'card-1.jpg'
-                },
-                {
-                    title: 'Cosmetic Dental Services',
-                    services: [
-                      'Composite Fillings',
-                      'Dental Bonding',
-                      'Dental Crowns',
-                      'Dental Veneers',
-                      'Smile Makeover'
-                    ],
-                    bg: 'card-2.jpg'
-                },
-                {
-                  title: 'Dental Implant Services',
-                  bg: 'card-3.jpg',
-                  services: [
-                    'Am I a Candidate for Dental Implants',
-                    'Dental Implants Overview',
-                    'Options for Replacing Missing Teeth',
-                    'Post-Op Care for Dental Implants',
-                    'The Dental Implant Procedure'
-                  ]
-                },
-                {
-                  title: 'Denture Services',
-                  bg: 'card-4.jpg',
-                  services: [
-                    'Dentures and Partial Dentures',
-                    'Adjusting to New Dentures',
-                    'Denture Care',
-                    'What to Expect When Getting Dentures',
-                    'What Do I Do If I Damage My Dentures'
-                  ]
-                },
-                {
-                  title: 'Almost Invisible Braces',
-                  bg: 'card-5.jpg',
-                  services: [
-                    'Alternative to Braces for Teens',
-                    'Does Invisalign Really Work',
-                    'Invisalign Braces',
-                    'Invisalign for Teens',
-                    'Invisalign vs Traditional Braces'
-                  ]
-                },
-                {
-                  title: 'Teeth Whitening Services',
-                  bg: 'card-6.jpg',
-                  services: [
-                    'Improve Your Smile for Senior Pictures',
-                    'Professional Teeth Whitening',
-                    'Teeth Whitening at Dentist'
-                  ]
-                },
-                {
-                  title: 'Dental Emergency!',
-                  bg: 'card-7.jpg',
-                  services: [
-                    'Emergency Dentist',
-                    'Reduce Sports Injuries with Mouth Guards',
-                    'Tooth Extraction',
-                    'What Should I Do If I Chip My Tooth',
-                    'Emergency Dentist vs. Emergency Room'
-                  ]
-                }
-            ]
-          }"
-      >
-        <template x-for="(card, index) in serviceCards" :key="index">
-          <div
-            class="relative bg-cover bg-center w-full md:w-[40%] min-h-[20rem] text-neutral-900 rounded-md overflow-hidden shadow-md mb-6"
-            :style="`background-image: url('assets/images/${card.bg}')`"
+      <div class="bg-primary-200 text-neutral-800">
+        <div class="container mx-auto px-4 py-14">
+          <h3
+            class="font-primary text-2xl md:text-3xl font-semibold leading-relaxed tracking-wide"
           >
-            <!-- Overlay -->
-            <div class="absolute inset-0 bg-primary-800/60 z-0"></div>
+            Caring for Dental Implants
+          </h3>
 
-            <div
-              class="relative inset-0 z-10 flex flex-col justify-between p-6"
-            >
-              <h3
-                class="font-primary text-2xl font-semibold capitalize text-neutral-50"
-                x-text="card.title"
-              ></h3>
+          <p class="leading-relaxed mt-3">
+            Once your dental implants are placed, taking care of them is simple.
+            Many patients ask questions like, “Do implants ever come out?” or
+            “How should I brush my teeth?” The answer is straightforward:
+            implants are built to last. Since they mimic a natural tooth root,
+            they’re secure and won’t fall out or loosen. You can live your
+            life—whether it’s playing sports, running, or just having fun with
+            family—without worrying about your implant.
+            <br /><br />
+            To maintain your implants, treat them like natural teeth—brush and
+            floss regularly, and keep up with your routine dental exams and
+            cleanings every six months. we will ensure your teeth stay in top
+            shape. While implants themselves are resistant to infection, the
+            surrounding gums and teeth still need attention. If untreated gum
+            disease or an infection like an abscess occurs, it can spread to the
+            jawbone, threatening the stability of your implants.
+            <br /><br />
+            If you experience any discomfort or pain around your implants, don’t
+            wait. Call us at (555) 123-4567 to book an appointment right away.
+            We’ll address any issues early and keep your implants—and natural
+            teeth—healthy for the long run.
+          </p>
+        </div>
+      </div>
 
-              <div
-                class="flex flex-col gap-2 text-neutral-50 text-base pt-4 pl-3"
-              >
-                <template
-                  x-for="(service, sIndex) in card.services"
-                  :key="sIndex"
-                >
-                  <div class="flex items-center gap-2">
-                    <span
-                      class="mt-1 w-1 h-1 rounded-full bg-neutral-50 flex-shrink-0"
-                    ></span>
-                    <a
-                      href="./single.html"
-                      class="hover:underline underline-offset-4"
-                      x-text="service"
-                    ></a>
-                  </div>
-                </template>
-              </div>
-            </div>
-          </div>
-        </template>
+      <div class="bg-primary-900 text-neutral-100">
+        <div class="container mx-auto px-4 py-14">
+          <h3
+            class="font-primary text-2xl md:text-3xl font-semibold leading-relaxed tracking-wide"
+          >
+            Benefits of Dental Implant Placement
+          </h3>
+
+          <p class="leading-relaxed mt-3">
+            Dental implants are an excellent option for patients missing teeth,
+            offering a natural feel, appearance, and function. Here are some of
+            the key advantages:
+            <br /><br />
+            1. Comfortable: Acting as artificial tooth roots, dental implants
+            stay securely in place. This stability makes them more comfortable
+            than removable dentures or other replacement options. Most patients
+            report that implants feel just like their natural teeth.
+            <br />
+            <br />
+            2. Functional: Implants offer excellent stability, making everyday
+            activities like eating, speaking, and cleaning much easier. They
+            perform just like the teeth they replace, without the hassle of more
+            temporary solutions that may interfere with daily life.
+            <br />
+            <br />
+
+            3. Long-lasting: Dental implants are one of the most durable tooth
+            replacement options. With proper care, they can last a lifetime.
+            Unlike removable dentures, implant-supported teeth don’t need to be
+            taken out for cleaning.
+            <br />
+            <br />
+
+            4. Natural appearance: Implants look just like real teeth. The
+            visible portion is a crown made from a composite material that
+            blends seamlessly with your natural tooth color, making it nearly
+            impossible to tell the difference. Many patients appreciate the
+            natural aesthetic of dental implants, as they restore both function
+            and confidence.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-neutral-700 text-neutral-100">
+        <div class="container mx-auto px-4 py-14">
+          <h3
+            class="font-primary text-2xl md:text-3xl font-semibold leading-relaxed tracking-wide"
+          >
+            Frequently Asked Questions
+          </h3>
+
+          <p class="leading-relaxed mt-3">
+            Q. How do I know if I’m a good candidate for dental implants?
+            <br /><br />
+            A. Most healthy individuals are eligible for dental implants.
+            However, if the jawbone is too weak or doesn’t have enough density,
+            it might limit implant placement. In these cases, procedures like
+            bone grafting can help restore the bone structure. A dentist can
+            evaluate your suitability for implants during an examination and
+            consultation.
+            <br /><br />
+
+            Q. What is the success rate of dental implants?
+            <br /><br />
+
+            A. Dental implants have an impressive success rate of up to 97%,
+            according to the Cleveland Clinic. With proper care, they can last a
+            lifetime, making them one of the most reliable and long-lasting
+            solutions for missing teeth.
+            <br /><br />
+
+            Q. How much do dental implants cost?
+            <br /><br />
+
+            A. The cost of dental implants varies based on factors like the
+            patient’s needs, jawbone condition, and the treatment area.
+            Insurance may cover some costs, but coverage depends on the
+            individual case. For accurate pricing, it's best to contact your
+            insurance provider and schedule a consultation with your dentist.
+            <br /><br />
+
+            Q. Are dental implants removable?
+            <br /><br />
+
+            A. Dental implants themselves are permanent. However, the
+            replacement teeth attached to them can either be fixed or removable.
+            Many patients opt for permanent dentures due to their superior
+            stability and comfort.
+            <br /><br />
+
+            Q. Do I need full dentures to get implants?
+            <br /><br />
+
+            A. No, dental implants can support anything from a single tooth to
+            multiple teeth or even a full arch. Whether you need partial or full
+            dentures depends on your specific situation. Implants are a
+            versatile solution tailored to each patient’s needs.
+          </p>
+        </div>
       </div>
     </section>
-    <!-- End: Services -->
+
+    <!-- End: Article -->
 
     <!-- Start: Location & Contact Information  -->
     <section id="contact-us" class="bg-neutral-50 text-neutral-900 pt-4">
