@@ -87,7 +87,7 @@ if (mobileMenu) {
 
 // ! sliders
 
-const swiperHomeTop = new Swiper(".swiper-home-top", {
+new Swiper(".swiper-home-top", {
   loop: true,
   effect: "fade",
   fadeEffect: {
@@ -100,9 +100,8 @@ const swiperHomeTop = new Swiper(".swiper-home-top", {
   speed: 800,
 });
 
-console.log(swiperHomeTop)
 
-const swiperHomeMiddle = new Swiper(".swiper-home-middle", {
+new Swiper(".swiper-home-middle", {
   loop: true,
   effect: "fade",
   fadeEffect: {
@@ -120,7 +119,7 @@ const swiperHomeMiddle = new Swiper(".swiper-home-middle", {
   },
 });
 
-const swiperHomeReviews = new Swiper(".swiper-home-reviews", {
+new Swiper(".swiper-home-reviews", {
   loop: true,
   spaceBetween: 30,
   freeMode: true,
@@ -145,7 +144,7 @@ const swiperHomeReviews = new Swiper(".swiper-home-reviews", {
 });
 
 
-const swiperAboutTop = new Swiper(".swiper-about-top", {
+new Swiper(".swiper-about-top", {
   loop: true,
   effect: "fade",
   fadeEffect: {
@@ -164,7 +163,7 @@ const swiperAboutTop = new Swiper(".swiper-about-top", {
 });
 
 
-const swiperServicesTop = new Swiper(".swiper-services-top", {
+new Swiper(".swiper-services-top", {
   loop: true,
   effect: "fade",
   fadeEffect: {
