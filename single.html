@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
     <link rel="manifest" href="./site.webmanifest" />
-
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,7 +31,7 @@
   <body>
     <!-- Start: Top Header -->
     <nav class="pt-0 sm:py-1 bg-primary-950 border-b-4 border-primary-100">
-      <div class="max-w-[1280px] mx-auto min-h-[100px]">
+      <div class="container mx-auto min-h-[100px]">
         <!-- Action button -->
         <div
           class="hidden lg:flex justify-end items-center gap-x-4 pt-3 px-4 mb-1.5"
@@ -224,426 +224,225 @@
     <!-- End: Top Header -->
 
     <!-- Start: Hero -->
-    <section>
-      <div
-        class="appointment-popup w-full h-full fixed top-0 z-10 bg-primary-950/95 opacity-0 pointer-events-none flex flex-col items-center justify-center"
-      >
-        <div class="w-[95%] sm:w-[380px]" id="appointment_popup_form">
-          <form
-            method="post"
-            action=""
-            class="appointment-form bg-primary-900 w-full p-4"
-          >
-            <input
-              type="hidden"
-              name="action"
-              value="submit_appointment_form"
-            />
-
-            <div class="flex flex-col gap-y-4">
-              <input
-                type="text"
-                name="full_name"
-                placeholder="Full Name (Required)"
-                required
-                class="appointment_field"
-              />
-
-              <input
-                type="email"
-                name="email"
-                placeholder="Email (Required)"
-                required
-                class="appointment_field"
-              />
-
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Phone Number (Required)"
-                required
-                class="appointment_field"
-              />
-            </div>
-
-            <button
-              type="submit"
-              class="btn-submit px-4 py-3 bg-accent-500 hover:bg-accent-400 transition-all font-primary text-lg font-medium text-neutral-900 cursor-pointer w-full mt-4"
-            >
-              Request an Appointment
-            </button>
-          </form>
-        </div>
-      </div>
-
-      <!-- Slider -->
-      <div class="swiper swiper-home-top bg-accent-500 !h-[600px]">
-        <div class="swiper-wrapper relative">
-          <div class="swiper-slide relative">
-            <img
-              src="./assets/images/home-slider-top-1.jpeg"
-              alt=""
-              srcset=""
-            />
-            <div
-              class="absolute left-1/2 transform -translate-x-1/2 container bottom-0 right-4 min-h-36 hidden lg:block"
-            >
-              <div
-                class="absolute right-4 bg-primary-100/50 py-4 px-6 pr-10 w-xl"
-              >
-                <h3
-                  class="font-primary text-4xl leading-relaxed tracking-wide font-bold text-left max-w-4xl text-neutral-900"
-                >
-                  Expert Care. Tailored Smiles.
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide relative">
-            <img src="./assets/images/home-slider-top-2.jpg" alt="" srcset="" />
-            <div
-              class="absolute left-1/2 transform -translate-x-1/2 container bottom-0 right-4 min-h-36 hidden lg:block"
-            >
-              <div
-                class="absolute right-4 bg-primary-100/50 py-4 px-6 pr-10 w-xl"
-              >
-                <h3
-                  class="font-primary text-4xl leading-relaxed tracking-wide font-bold text-left max-w-4xl text-neutral-900"
-                >
-                  Give you and your family <br />
-                  the best personalized dental experience!
-                </h3>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="absolute left-1/2 transform -translate-x-1/2 container h-full z-50 top-0"
-          >
-            <div class="absolute top-10 right-4 w-[380px] hidden lg:block">
-              <form
-                method="post"
-                action=""
-                class="appointment-form bg-primary-900 w-full p-4"
-              >
-                <input
-                  type="hidden"
-                  name="action"
-                  value="submit_appointment_form"
-                />
-
-                <div class="flex flex-col gap-y-4">
-                  <input
-                    type="text"
-                    name="full_name"
-                    placeholder="Full Name (Required)"
-                    required
-                    class="appointment_field"
-                  />
-
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email (Required)"
-                    required
-                    class="appointment_field"
-                  />
-
-                  <input
-                    type="tel"
-                    name="phone"
-                    placeholder="Phone Number (Required)"
-                    required
-                    class="appointment_field"
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  class="btn-submit px-4 py-3 bg-accent-500 hover:bg-accent-400 transition-all font-primary text-lg font-medium text-neutral-900 cursor-pointer w-full mt-4"
-                >
-                  Request an Appointment
-                </button>
-              </form>
-            </div>
-
-            <div class="absolute top-0 w-full h-full lg:hidden block">
-              <div
-                class="w-full mb-10 flex justify-center items-center absolute bottom-0"
-              >
-                <button
-                  type="button"
-                  class="appointment-trigger-btn w-[280px] rounded-full px-4 py-3 bg-accent-500 hover:bg-accent-400 transition-all font-primary text-lg font-medium text-neutral-900 cursor-pointer mt-4"
-                >
-                  Make an Appointment
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- End: Hero -->
-
-    <!-- Start: Intro -->
     <section class="container mx-auto px-4 py-10">
       <div
-        class="flex items-start justify-between gap-x-6 flex-col-reverse lg:flex-row gap-y-6 pt-10 sm:pt-4"
+        class="flex items-center justify-between gap-x-8 flex-col lg:flex-row gap-y-6 pt-10 sm:pt-4"
       >
-        <div class="w-full lg:w-1/2">
+        <div class="w-full lg:w-2/3">
           <h2
-            class="font-primary text-3xl font-semibold leading-relaxed tracking-wide vid-intro-title"
+            class="font-primary text-3xl md:text-4xl font-bold leading-relaxed tracking-wide"
           >
-            Welcome to Dental Design
+            Dental Implants
           </h2>
 
-          <p class="leading-relaxed mt-4 vid-intro-detail">
-            At Dental Design, we’re dedicated to delivering exceptional dental
-            care to families across the New York area, serving patients of all
-            ages. Our comprehensive services are tailored to meet each patient's
-            unique oral health needs. We believe in the power of listening,
-            taking the time to understand your individual goals, concerns, and
-            lifestyle, so we can offer personalized solutions that enhance your
-            health and transform your smile into something radiant.
-            <br />
-            <br />
-            Located at 850 Madison Ave, Suite 205, New York, NY 10021, we’re now
-            accepting new patients. Schedule your appointment today by calling
-            212-548-3261.
+          <p class="leading-relaxed mt-4 intro-detail">
+            Reliable Dental Care You Can Count On – Right Here in New York At
+            New York Dental Design, we deliver dependable, high-quality dental
+            services for patients of all ages. From regular cleanings and
+            checkups to crowns, veneers, and full restorations – we use
+            cutting-edge tools to get the job done right the first time.
+            <br /><br />
+            Need urgent care? We handle dental emergencies fast – including root
+            canals, bonding, and more. Missing teeth? We understand how that
+            affects your confidence and everyday life. Gaps from missing teeth
+            can lead to infections, shifting teeth, and problems with eating or
+            speaking. That’s why we specialize in dental implants – giving you a
+            strong, natural-looking solution that restores your bite and your
+            confidence. Our implant procedures are precise, safe, and
+            long-lasting. You have choices when it comes to dental care, and we
+            work hard to earn your trust by delivering results.
+            <br /><br />
+            We’re based in New York and take pride in building long-term
+            relationships with our patients. You’ll always get straight answers,
+            skilled care, and a clean, welcoming environment.
+            <br /><br />
+            Call (555) 123-4567 today to schedule your appointment. See why New
+            Yorkers trust us to keep their smiles strong.
           </p>
         </div>
 
-        <div class="w-full lg:w-1/2 vid-intro-video">
-          <video controls class="w-full h-auto">
-            <source src="/dental-design-ui/assets/videos/intro_video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+        <div class="w-full lg:w-1/3">
+          <img src="/dental-design-ui/assets/images/single-page-hero.png" alt="" />
+
+          <div class="w-full flex justify-center items-center">
+            <button
+              type="button"
+              class="appointment-trigger-btn w-full px-4 py-3 bg-primary-800 hover:bg-primary-900 transition-all font-primary text-lg font-medium text-neutral-50 cursor-pointer mt-4"
+            >
+              Make an Appointment
+            </button>
+          </div>
         </div>
       </div>
     </section>
-    <!-- End: Intro -->
+    <!-- End: Hero -->
 
-    <!-- Start: Offer -->
+    <!-- Start: Article -->
 
     <section>
-      <div class="pt-6">
-        <!-- Swiper -->
-        <div
-          class="swiper swiper-home-middle bg-accent-500 !h-[492px] w-full relative"
-        >
-          <div class="swiper-wrapper relative">
-            <div class="swiper-slide relative">
-              <img
-                src="/dental-design-ui/assets/images/home-slider-middle-1.jpg"
-                alt=""
-                srcset=""
-              />
-              <div class="absolute inset-0 bg-black opacity-40 z-10"></div>
-
-              <div
-                class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 container min-h-36 z-50"
-              >
-                <div
-                  class="flex items-center justify-center flex-col h-full px-4"
-                >
-                  <h3
-                    class="text-4xl font-primary font-bold text-neutral-50 tracking-wide leading-relaxed"
-                  >
-                    Your Smile, Reimagined.
-                  </h3>
-                  <p class="text-neutral-50 font-semibold mt-2.5">
-                    Explore cutting-edge cosmetic treatments that bring out the
-                    best in your smile.
-                  </p>
-                  <a
-                    href="#"
-                    class="!no-underline bg-secondary-500 px-6 py-2 rounded-full text-neutral-50 mt-5 text-lg font-medium hover:bg-secondary-600 transition-all min-w-36 block"
-                    >Discover Cosmetic Solutions</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide relative">
-              <img
-                src="/dental-design-ui/assets/images/home-slider-middle-2.jpg"
-                alt=""
-                srcset=""
-              />
-              <div class="absolute inset-0 bg-black opacity-40 z-10"></div>
-
-              <div
-                class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 container min-h-36 z-50"
-              >
-                <div
-                  class="flex items-center justify-center flex-col h-full px-4"
-                >
-                  <h3
-                    class="text-4xl font-primary font-bold text-neutral-50 tracking-wide leading-relaxed"
-                  >
-                    Gentle Dentistry & Personalized Care.
-                  </h3>
-                  <p class="text-neutral-50 font-semibold mt-2.5">
-                    We use state-of-the-art technology for faster, safer, and
-                    more precise care.
-                  </p>
-                  <a
-                    href="#"
-                    class="!no-underline bg-secondary-500 px-6 py-2 rounded-full text-neutral-50 mt-5 text-lg font-medium hover:bg-secondary-600 transition-all min-w-36 block"
-                    >Learn About Our Technology</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Pagination Dots -->
-          <div class="swiper-pagination absolute bottom-0 py-2 w-full"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- End: Offer -->
-
-    <!-- Start: Our Team  -->
-
-    <section class="container mx-auto px-4 py-10 bg-white">
-      <div
-        class="flex items-start justify-between gap-x-6 flex-col lg:flex-row gap-y-6"
-      >
-        <div class="w-full lg:w-1/2">
-          <h3 class="font-primary text-3xl font-semibold our-team-title">
-            Our Team
+      <div class="bg-primary-900 text-neutral-100">
+        <div class="container mx-auto px-4 py-14">
+          <h3
+            class="font-primary text-2xl md:text-3xl font-semibold leading-relaxed tracking-wide"
+          >
+            The Dental Implant Process
           </h3>
 
-          <p class="mt-6 our-team-text">
-            <b>
-              Dr. Chase Hughes, DDS, and the team at Dental Design are committed
-              to providing top-quality dental care in New York. We take a
-              comprehensive approach to oral health, combining expert treatment
-              with patient education to promote lasting wellness.
-            </b>
-            <br />
-            <br />
-            From the moment you walk through our doors, our friendly and
-            attentive staff ensure a comfortable, stress-free experience. We
-            believe in building genuine relationships with our patients,
-            listening to their concerns, and delivering personalized care at
-            every step—whether scheduling an appointment, completing paperwork,
-            undergoing an exam, or receiving treatment.
-            <br />
-            <br />
-            Our team stays at the forefront of advanced dental techniques,
-            allowing us to offer the latest innovations in dentistry. At Dental
-            Design, your health, comfort, and confidence in your smile are our
-            top priorities.
+          <p class="leading-relaxed mt-3">
+            Dental implants serve as artificial tooth roots, providing a stable
+            foundation for replacement teeth. The process begins with a small
+            incision in the gum to expose the bone where the implant will be
+            placed. After insertion, the implant is secured, and the gum is
+            sutured around it. In certain cases, a temporary denture may be used
+            in place of the permanent replacement teeth.
+            <br /><br />
+            Following the procedure, the bone needs time to integrate with the
+            implant, which can take weeks or even months to fully heal. Once the
+            bone has fused securely with the implant, the final restoration can
+            be fitted. In some cases, if the jawbone is too weak, a bone graft
+            may be required to provide the necessary support. Once healing is
+            complete, an abutment is placed, allowing the final crown or
+            dentures to be attached to the implant.
           </p>
-
-          <div>
-            <a
-              href="./about-us"
-              class="!no-underline bg-primary-800 px-6 py-2 rounded-full text-neutral-50 mt-5 text-lg font-medium hover:bg-primary-900 transition-all min-w-36 inline-block text-center our-team-about-button-text"
-            >
-              Read More About Us
-            </a>
-          </div>
         </div>
-        <div class="w-full lg:w-1/2 self-center our-team-photo">
-          <img src="/dental-design-ui/assets/images/our-team.jpg" alt="Team Image" />
+      </div>
+
+      <div class="bg-primary-200 text-neutral-800">
+        <div class="container mx-auto px-4 py-14">
+          <h3
+            class="font-primary text-2xl md:text-3xl font-semibold leading-relaxed tracking-wide"
+          >
+            Caring for Dental Implants
+          </h3>
+
+          <p class="leading-relaxed mt-3">
+            Once your dental implants are placed, taking care of them is simple.
+            Many patients ask questions like, “Do implants ever come out?” or
+            “How should I brush my teeth?” The answer is straightforward:
+            implants are built to last. Since they mimic a natural tooth root,
+            they’re secure and won’t fall out or loosen. You can live your
+            life—whether it’s playing sports, running, or just having fun with
+            family—without worrying about your implant.
+            <br /><br />
+            To maintain your implants, treat them like natural teeth—brush and
+            floss regularly, and keep up with your routine dental exams and
+            cleanings every six months. we will ensure your teeth stay in top
+            shape. While implants themselves are resistant to infection, the
+            surrounding gums and teeth still need attention. If untreated gum
+            disease or an infection like an abscess occurs, it can spread to the
+            jawbone, threatening the stability of your implants.
+            <br /><br />
+            If you experience any discomfort or pain around your implants, don’t
+            wait. Call us at (555) 123-4567 to book an appointment right away.
+            We’ll address any issues early and keep your implants—and natural
+            teeth—healthy for the long run.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-primary-900 text-neutral-100">
+        <div class="container mx-auto px-4 py-14">
+          <h3
+            class="font-primary text-2xl md:text-3xl font-semibold leading-relaxed tracking-wide"
+          >
+            Benefits of Dental Implant Placement
+          </h3>
+
+          <p class="leading-relaxed mt-3">
+            Dental implants are an excellent option for patients missing teeth,
+            offering a natural feel, appearance, and function. Here are some of
+            the key advantages:
+            <br /><br />
+            1. Comfortable: Acting as artificial tooth roots, dental implants
+            stay securely in place. This stability makes them more comfortable
+            than removable dentures or other replacement options. Most patients
+            report that implants feel just like their natural teeth.
+            <br />
+            <br />
+            2. Functional: Implants offer excellent stability, making everyday
+            activities like eating, speaking, and cleaning much easier. They
+            perform just like the teeth they replace, without the hassle of more
+            temporary solutions that may interfere with daily life.
+            <br />
+            <br />
+
+            3. Long-lasting: Dental implants are one of the most durable tooth
+            replacement options. With proper care, they can last a lifetime.
+            Unlike removable dentures, implant-supported teeth don’t need to be
+            taken out for cleaning.
+            <br />
+            <br />
+
+            4. Natural appearance: Implants look just like real teeth. The
+            visible portion is a crown made from a composite material that
+            blends seamlessly with your natural tooth color, making it nearly
+            impossible to tell the difference. Many patients appreciate the
+            natural aesthetic of dental implants, as they restore both function
+            and confidence.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-neutral-700 text-neutral-100">
+        <div class="container mx-auto px-4 py-14">
+          <h3
+            class="font-primary text-2xl md:text-3xl font-semibold leading-relaxed tracking-wide"
+          >
+            Frequently Asked Questions
+          </h3>
+
+          <p class="leading-relaxed mt-3">
+            Q. How do I know if I’m a good candidate for dental implants?
+            <br /><br />
+            A. Most healthy individuals are eligible for dental implants.
+            However, if the jawbone is too weak or doesn’t have enough density,
+            it might limit implant placement. In these cases, procedures like
+            bone grafting can help restore the bone structure. A dentist can
+            evaluate your suitability for implants during an examination and
+            consultation.
+            <br /><br />
+
+            Q. What is the success rate of dental implants?
+            <br /><br />
+
+            A. Dental implants have an impressive success rate of up to 97%,
+            according to the Cleveland Clinic. With proper care, they can last a
+            lifetime, making them one of the most reliable and long-lasting
+            solutions for missing teeth.
+            <br /><br />
+
+            Q. How much do dental implants cost?
+            <br /><br />
+
+            A. The cost of dental implants varies based on factors like the
+            patient’s needs, jawbone condition, and the treatment area.
+            Insurance may cover some costs, but coverage depends on the
+            individual case. For accurate pricing, it's best to contact your
+            insurance provider and schedule a consultation with your dentist.
+            <br /><br />
+
+            Q. Are dental implants removable?
+            <br /><br />
+
+            A. Dental implants themselves are permanent. However, the
+            replacement teeth attached to them can either be fixed or removable.
+            Many patients opt for permanent dentures due to their superior
+            stability and comfort.
+            <br /><br />
+
+            Q. Do I need full dentures to get implants?
+            <br /><br />
+
+            A. No, dental implants can support anything from a single tooth to
+            multiple teeth or even a full arch. Whether you need partial or full
+            dentures depends on your specific situation. Implants are a
+            versatile solution tailored to each patient’s needs.
+          </p>
         </div>
       </div>
     </section>
-    <!-- End: Our Team -->
 
-    <!-- Start: Reviews -->
-
-    <section id="reviews" class="py-10 bg-white">
-      <h3
-        class="font-primary text-3xl font-semibold tracking-wide leading-relaxed text-center"
-      >
-        Some of our Reviews
-      </h3>
-
-      <div class="mt-12 container mx-auto px-4">
-        <!-- Swiper -->
-        <div class="swiper swiper-home-reviews min-h-[220px] w-full relative">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide px-4">
-              <div class="flex bg-neutral-50 h-[180px] rounded-2xl">
-                <div class="w-3/12 h-full overflow-hidden rounded-l-2xl">
-                  <img
-                    class="w-full h-full object-contain object-top"
-                    src="/dental-design-ui/assets/images/review-3.jpg"
-                    alt=""
-                    srcset=""
-                  />
-                </div>
-                <div class="w-9/12 py-4 overflow-y-auto no-scrollbar">
-                  <p class="px-2 pr-4 text-left">
-                    "Such a great experience at Dental Design! The staff was
-                    super friendly, and the whole visit was quick and painless.
-                    So glad I found this place!"
-                  </p>
-                  <h5 class="text-left font-medium mt-2.5 px-2">
-                    Sarah Hughes
-                  </h5>
-                  <div class="text-left px-1 mt-2">⭐⭐⭐⭐⭐</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide px-4">
-              <div class="flex bg-neutral-50 h-[180px] rounded-2xl">
-                <div class="w-3/12 h-full overflow-hidden rounded-l-2xl">
-                  <img
-                    class="w-full h-full object-contain object-top"
-                    src="/dental-design-ui/assets/images/review-4.jpg"
-                    alt=""
-                    srcset=""
-                  />
-                </div>
-                <div class="w-9/12 py-4 overflow-y-auto no-scrollbar">
-                  <p class="px-2 pr-4 text-left">
-                    "Such a great experience at Dental Design! The staff was
-                    super friendly, and the whole visit was quick and painless.
-                    So glad I found this place!"
-                  </p>
-                  <h5 class="text-left font-medium mt-2.5 px-2">Tina Robert</h5>
-                  <div class="text-left px-1 mt-2">⭐⭐⭐⭐⭐</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide px-4">
-              <div class="flex bg-neutral-50 h-[180px] rounded-2xl">
-                <div class="w-3/12 h-full overflow-hidden rounded-l-2xl">
-                  <img
-                    class="w-full h-full object-contain object-top"
-                    src="/dental-design-ui/assets/images/review-1.jpg"
-                    alt=""
-                    srcset=""
-                  />
-                </div>
-                <div class="w-9/12 py-4 overflow-y-auto no-scrollbar">
-                  <p class="px-2 pr-4 text-left">
-                    "Such a great experience at Dental Design! The staff was
-                    super friendly, and the whole visit was quick and painless.
-                    So glad I found this place!"
-                  </p>
-                  <h5 class="text-left font-medium mt-2.5 px-2">Mark River</h5>
-                  <div class="text-left px-1 mt-2">⭐⭐⭐⭐⭐</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Pagination Dots -->
-          <div class="swiper-pagination absolute bottom-0 py-2 w-full"></div>
-        </div>
-      </div>
-    </section>
-    <!-- End: Reviews -->
+    <!-- End: Article -->
 
     <!-- Start: Location & Contact Information  -->
     <section id="contact-us" class="bg-neutral-50 text-neutral-900 pt-4">
