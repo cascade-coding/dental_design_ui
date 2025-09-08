@@ -1,0 +1,108 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+@theme {
+  --color-primary-50: #f0fdfa;
+  --color-primary-100: #cdfaf1;
+  --color-primary-200: #9af5e3;
+  --color-primary-300: #60e8d3;
+  --color-primary-400: #2fd2bd;
+  --color-primary-500: #16b6a4;
+  --color-primary-600: #0f9287;
+  --color-primary-700: #10756d;
+  --color-primary-800: #125d58;
+  --color-primary-900: #144d49;
+  --color-primary-950: #053332;
+
+  --color-secondary-50: #fff2f1;
+  --color-secondary-100: #ffe2df;
+  --color-secondary-200: #ffcac5;
+  --color-secondary-300: #ffa69d;
+  --color-secondary-400: #ff7264;
+  --color-secondary-500: #ff5342;
+  --color-secondary-600: #ed2815;
+  --color-secondary-700: #c81e0d;
+  --color-secondary-800: #a51c0f;
+  --color-secondary-900: #881e14;
+  --color-secondary-950: #4b0a04;
+
+  --color-accent-300: #ffe97f;
+  --color-accent-400: #ffe359;
+  --color-accent-500: #ffd700;
+
+  /* fonts */
+  --font-primary: Montserrat, sans-serif;
+  --font-base: "Open Sans", sans-serif;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--color-primary);
+}
+
+@layer utilities {
+  @media (min-width: 530px) and (max-width: 620px) {
+    .w-custom-range-img {
+      width: 280px;
+    }
+  }
+
+  @media (max-width: 340px) {
+    .w-custom-range-img-xs {
+      width: 160px;
+    }
+  }
+}
+
+/* appointment form */
+
+.appointment_field {
+  @apply w-full px-3 py-3 bg-primary-50 text-neutral-900 outline-0 border-2 border-transparent focus:border-accent-500 placeholder:text-neutral-900;
+}
+
+.appointment_popup_show {
+  @apply !pointer-events-auto !opacity-100;
+}
+
+/* nav menu */
+.mobile_menu {
+  user-select: none;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 300ms ease, transform 300ms ease;
+  padding-bottom: 40px;
+}
+
+/* Active menu state */
+.mobile_menu.open_menu {
+  user-select: auto;
+  pointer-events: all;
+  opacity: 1;
+}
+
+.mobile_menu .menu {
+  transition: transform 500ms ease-in-out;
+}
+
+/* sliders */
+
+.swiper-home-top {
+  width: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: var(--color-primary-400) !important;
+}
