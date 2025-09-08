@@ -1,6 +1,5 @@
 import Alpine from 'alpinejs';
 import { icons } from './icons';
-import './style.css'
 
 
 declare global {
