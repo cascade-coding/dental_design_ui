@@ -144,3 +144,58 @@ const swiperHomeReviews = new Swiper(".swiper-home-reviews", {
   },
 });
 
+
+const swiperAboutTop = new Swiper(".swiper-about-top", {
+  loop: true,
+  effect: "fade",
+  fadeEffect: {
+    crossFade: true,
+  },
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  speed: 800,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+});
+
+
+
+
+
+
+
+
+
+// ! Popups
+const appointmentTriggerBtn = document.querySelector<HTMLButtonElement>(
+  ".appointment-trigger-btn"
+);
+const appointmentPopup = document.querySelector<HTMLDivElement>(
+  ".appointment-popup"
+);
+
+if (appointmentTriggerBtn && appointmentPopup) {
+  appointmentTriggerBtn.addEventListener("click", () => {
+    appointmentPopup.classList.add("appointment_popup_show");
+  });
+
+  document.addEventListener("click", (e: MouseEvent) => {
+    const target = e.target as Node; // Ensure type safety for contains()
+    const appointmentPopupForm = document.getElementById(
+      "appointment_popup_form"
+    );
+
+    if (
+      appointmentPopupForm &&
+      !appointmentPopupForm.contains(target) &&
+      !appointmentTriggerBtn.contains(target)
+    ) {
+      appointmentPopup.classList.remove("appointment_popup_show");
+    }
+  });
+}

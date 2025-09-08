@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
+    "@types/node": "^24.3.1",
     "alpinejs": "^3.14.9",
     "swiper": "^11.2.10",
     "tailwindcss": "^4.1.11"

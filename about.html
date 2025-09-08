@@ -224,165 +224,26 @@
 
     <!-- Start: Hero -->
     <section>
-      <div
-        class="appointment-popup w-full h-full fixed top-0 z-10 bg-primary-950/95 opacity-0 pointer-events-none flex flex-col items-center justify-center"
-      >
-        <div class="w-[95%] sm:w-[380px]" id="appointment_popup_form">
-          <form
-            method="post"
-            action=""
-            class="appointment-form bg-primary-900 w-full p-4"
-          >
-            <input
-              type="hidden"
-              name="action"
-              value="submit_appointment_form"
-            />
-
-            <div class="flex flex-col gap-y-4">
-              <input
-                type="text"
-                name="full_name"
-                placeholder="Full Name (Required)"
-                required
-                class="appointment_field"
-              />
-
-              <input
-                type="email"
-                name="email"
-                placeholder="Email (Required)"
-                required
-                class="appointment_field"
-              />
-
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Phone Number (Required)"
-                required
-                class="appointment_field"
-              />
+      <div class="">
+        <!-- Swiper -->
+        <div
+          class="swiper swiper-about-top bg-accent-500 !h-[492px] w-full relative"
+        >
+          <div class="swiper-wrapper relative">
+            <div class="swiper-slide relative">
+              <img src="/assets/images/about-top-1.jpg" alt="" srcset="" />
             </div>
 
-            <button
-              type="submit"
-              class="btn-submit px-4 py-3 bg-accent-500 hover:bg-accent-400 transition-all font-primary text-lg font-medium text-neutral-900 cursor-pointer w-full mt-4"
-            >
-              Request an Appointment
-            </button>
-          </form>
-        </div>
-      </div>
-
-      <!-- Slider -->
-      <div class="swiper swiper-home-top bg-accent-500 !h-[600px]">
-        <div class="swiper-wrapper relative">
-          <div class="swiper-slide relative">
-            <img
-              src="./assets/images/home-slider-top-1.jpeg"
-              alt=""
-              srcset=""
-            />
-            <div
-              class="absolute left-1/2 transform -translate-x-1/2 container bottom-0 right-4 min-h-36 hidden lg:block"
-            >
-              <div
-                class="absolute right-4 bg-primary-100/50 py-4 px-6 pr-10 w-xl"
-              >
-                <h3
-                  class="font-primary text-4xl leading-relaxed tracking-wide font-bold text-left max-w-4xl text-neutral-900"
-                >
-                  Expert Care. Tailored Smiles.
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide relative">
-            <img src="./assets/images/home-slider-top-2.jpg" alt="" srcset="" />
-            <div
-              class="absolute left-1/2 transform -translate-x-1/2 container bottom-0 right-4 min-h-36 hidden lg:block"
-            >
-              <div
-                class="absolute right-4 bg-primary-100/50 py-4 px-6 pr-10 w-xl"
-              >
-                <h3
-                  class="font-primary text-4xl leading-relaxed tracking-wide font-bold text-left max-w-4xl text-neutral-900"
-                >
-                  Give you and your family <br />
-                  the best personalized dental experience!
-                </h3>
-              </div>
+            <div class="swiper-slide relative">
+              <img src="/assets/images/our-team.jpg" alt="" srcset="" />
             </div>
           </div>
 
-          <div
-            class="absolute left-1/2 transform -translate-x-1/2 container h-full z-50 top-0"
-          >
-            <div class="absolute top-10 right-4 w-[380px] hidden lg:block">
-              <form
-                method="post"
-                action=""
-                class="appointment-form bg-primary-900 w-full p-4"
-              >
-                <input
-                  type="hidden"
-                  name="action"
-                  value="submit_appointment_form"
-                />
-
-                <div class="flex flex-col gap-y-4">
-                  <input
-                    type="text"
-                    name="full_name"
-                    placeholder="Full Name (Required)"
-                    required
-                    class="appointment_field"
-                  />
-
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email (Required)"
-                    required
-                    class="appointment_field"
-                  />
-
-                  <input
-                    type="tel"
-                    name="phone"
-                    placeholder="Phone Number (Required)"
-                    required
-                    class="appointment_field"
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  class="btn-submit px-4 py-3 bg-accent-500 hover:bg-accent-400 transition-all font-primary text-lg font-medium text-neutral-900 cursor-pointer w-full mt-4"
-                >
-                  Request an Appointment
-                </button>
-              </form>
-            </div>
-
-            <div class="absolute top-0 w-full h-full lg:hidden block">
-              <div
-                class="w-full mb-10 flex justify-center items-center absolute bottom-0"
-              >
-                <button
-                  type="button"
-                  class="appointment-trigger-btn w-[280px] rounded-full px-4 py-3 bg-accent-500 hover:bg-accent-400 transition-all font-primary text-lg font-medium text-neutral-900 cursor-pointer mt-4"
-                >
-                  Make an Appointment
-                </button>
-              </div>
-            </div>
-          </div>
+          <!-- Pagination Dots -->
+          <div class="swiper-pagination absolute bottom-0 py-2 w-full"></div>
         </div>
       </div>
     </section>
-
     <!-- End: Hero -->
 
     <!-- Start: Intro -->
@@ -394,22 +255,22 @@
           <h2
             class="font-primary text-3xl font-semibold leading-relaxed tracking-wide vid-intro-title"
           >
-            Welcome to Dental Design
+            New York Dental Design
           </h2>
 
           <p class="leading-relaxed mt-4 vid-intro-detail">
-            At Dental Design, we’re dedicated to delivering exceptional dental
-            care to families across the New York area, serving patients of all
-            ages. Our comprehensive services are tailored to meet each patient's
-            unique oral health needs. We believe in the power of listening,
-            taking the time to understand your individual goals, concerns, and
-            lifestyle, so we can offer personalized solutions that enhance your
-            health and transform your smile into something radiant.
-            <br />
-            <br />
-            Located at 850 Madison Ave, Suite 205, New York, NY 10021, we’re now
-            accepting new patients. Schedule your appointment today by calling
-            212-548-3261.
+            We are a trusted family dental practice in New York, dedicated to
+            providing top-quality care for patients of all ages. Using
+            state-of-the-art technology, we offer a full range of services,
+            including routine checkups, cleanings, crowns, veneers, and more.
+            <br /><br />
+            Our team also specializes in emergency dental care, handling
+            everything from root canals to bonding and bridges. As a local
+            practice, we value lasting relationships with our patients and
+            strive to create a comfortable, stress-free experience.
+            <br /><br />
+            Call us at (555) 123-4567 to book an appointment and see why so many
+            families choose us for their dental care!
           </p>
         </div>
 
@@ -423,226 +284,171 @@
     </section>
     <!-- End: Intro -->
 
-    <!-- Start: Offer -->
-
-    <section>
-      <div class="pt-6">
-        <!-- Swiper -->
+    <!-- Start: Doctors -->
+    <section class="py-10 doctor-section">
+      <div class="bg-primary-900 card">
         <div
-          class="swiper swiper-home-middle bg-accent-500 !h-[492px] w-full relative"
+          class="container mx-auto px-4 py-10 flex items-center lg:items-start justify-between gap-8 flex-col lg:flex-row"
         >
-          <div class="swiper-wrapper relative">
-            <div class="swiper-slide relative">
-              <img
-                src="/assets/images/home-slider-middle-1.jpg"
-                alt=""
-                srcset=""
-              />
-              <div class="absolute inset-0 bg-black opacity-40 z-10"></div>
-
-              <div
-                class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 container min-h-36 z-50"
-              >
-                <div
-                  class="flex items-center justify-center flex-col h-full px-4"
-                >
-                  <h3
-                    class="text-4xl font-primary font-bold text-neutral-50 tracking-wide leading-relaxed"
-                  >
-                    Your Smile, Reimagined.
-                  </h3>
-                  <p class="text-neutral-50 font-semibold mt-2.5">
-                    Explore cutting-edge cosmetic treatments that bring out the
-                    best in your smile.
-                  </p>
-                  <a
-                    href="#"
-                    class="!no-underline bg-secondary-500 px-6 py-2 rounded-full text-neutral-50 mt-5 text-lg font-medium hover:bg-secondary-600 transition-all min-w-36 block"
-                    >Discover Cosmetic Solutions</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide relative">
-              <img
-                src="/assets/images/home-slider-middle-2.jpg"
-                alt=""
-                srcset=""
-              />
-              <div class="absolute inset-0 bg-black opacity-40 z-10"></div>
-
-              <div
-                class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 container min-h-36 z-50"
-              >
-                <div
-                  class="flex items-center justify-center flex-col h-full px-4"
-                >
-                  <h3
-                    class="text-4xl font-primary font-bold text-neutral-50 tracking-wide leading-relaxed"
-                  >
-                    Gentle Dentistry & Personalized Care.
-                  </h3>
-                  <p class="text-neutral-50 font-semibold mt-2.5">
-                    We use state-of-the-art technology for faster, safer, and
-                    more precise care.
-                  </p>
-                  <a
-                    href="#"
-                    class="!no-underline bg-secondary-500 px-6 py-2 rounded-full text-neutral-50 mt-5 text-lg font-medium hover:bg-secondary-600 transition-all min-w-36 block"
-                    >Learn About Our Technology</a
-                  >
-                </div>
-              </div>
-            </div>
+          <div
+            class="w-full lg:w-1/4 flex items-center justify-center lg:justify-start"
+          >
+            <img
+              class="w-full max-w-[280px] lg:max-w-full h-auto"
+              src="/assets/images/doctor-1.png"
+              alt=""
+            />
           </div>
 
-          <!-- Pagination Dots -->
-          <div class="swiper-pagination absolute bottom-0 py-2 w-full"></div>
+          <div class="text-neutral-50 w-full lg:w-3/4">
+            <h3 class="font-primary text-2xl font-semibold">
+              Dr. Nathan Caldwell, DMD
+            </h3>
+            <p class="mt-4">
+              Dr. Nathan Caldwell is a dedicated and meticulous dental
+              professional with a deep passion for helping patients achieve
+              healthy, confident smiles. With a reputation for his gentle
+              approach and precise craftsmanship, Dr. Caldwell is especially
+              known for his ability to calm even the most anxious patients,
+              ensuring they feel comfortable every step of the way. His warm
+              demeanor, paired with his keen attention to detail, makes him a
+              trusted choice for individuals seeking expert dental care.
+              <br />
+              <br />
+              A graduate of the University of Pennsylvania School of Dental
+              Medicine, Dr. Caldwell pursued advanced training at the Boston VA
+              Healthcare System, where he gained extensive experience treating
+              veterans with complex dental and medical conditions. His expertise
+              spans a wide range of specialties, including cosmetic and
+              restorative dentistry, dental implantology, and full-mouth
+              rehabilitation. His technical skills, combined with an artist’s
+              eye for aesthetics, allow him to create stunning, natural-looking
+              smiles tailored to each patient’s needs.
+              <br />
+              <br />
+              Dr. Caldwell is also a firm believer in giving back to the
+              community. He actively participates in outreach programs that
+              provide dental care to underserved populations, both locally and
+              internationally. He has volunteered on multiple medical mission
+              trips, offering his skills to those who lack access to quality
+              dental care. Additionally, he mentors aspiring dental students,
+              guiding them toward successful careers in dentistry.
+              <br />
+              <br />
+              When he’s not perfecting smiles, Dr. Caldwell enjoys outdoor
+              adventures, whether it's hiking in the mountains, exploring new
+              travel destinations, or capturing breathtaking landscapes through
+              his passion for photography. He’s also a self-proclaimed coffee
+              connoisseur who’s always on the hunt for the perfect espresso.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-primary-900 card">
+        <div
+          class="container mx-auto px-4 py-10 flex items-center lg:items-start justify-between gap-8 flex-col lg:flex-row"
+        >
+          <div
+            class="w-full lg:w-1/4 flex items-center justify-center lg:justify-start"
+          >
+            <img
+              class="w-full max-w-[280px] lg:max-w-full h-auto"
+              src="/assets/images/doctor-2.png"
+              alt=""
+            />
+          </div>
+
+          <div class="text-neutral-50 w-full lg:w-3/4">
+            <h3 class="font-primary text-2xl font-semibold">
+              Dr. Evelyn Harper, DDS
+            </h3>
+            <p class="mt-4">
+              Dr. Evelyn Harper is a skilled and compassionate dentist dedicated
+              to providing top-tier care with a personalized touch. Raised in
+              the charming city of Charleston, South Carolina, she developed an
+              early appreciation for precision and artistry—qualities that now
+              define her approach to dentistry. Her philosophy revolves around
+              patient education, transparency, and ensuring each individual
+              feels at ease in the dental chair. Dr. Harper earned her Doctorate
+              of Dental Surgery (DDS) from the University of Michigan,
+              graduating with honors and receiving recognition from the Omicron
+              Kappa Upsilon National Dental Honor Society. She further honed her
+              expertise during her residency at the Johns Hopkins Hospital,
+              where she served as chief resident. There, she gained extensive
+              experience in complex restorations, cosmetic dentistry, and
+              treating patients with dental anxiety. Whether performing
+              full-mouth rehabilitations or simple routine care, she blends
+              technical precision with a gentle touch to create lasting, healthy
+              smiles.
+              <br />
+              <br />
+              Passionate about service, Dr. Harper actively participates in
+              community outreach programs, offering dental care to underserved
+              populations. She has volunteered on medical missions abroad and
+              frequently donates her time to local initiatives that provide free
+              dental services to children and seniors in need.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-primary-900 card">
+        <div
+          class="container mx-auto px-4 py-10 flex items-center lg:items-start justify-between gap-8 flex-col lg:flex-row"
+        >
+          <div
+            class="w-full lg:w-1/4 flex items-center justify-center lg:justify-start"
+          >
+            <img
+              class="w-full max-w-[280px] lg:max-w-full h-auto"
+              src="/assets/images/doctor-3.png"
+              alt=""
+            />
+          </div>
+
+          <div class="text-neutral-50 w-full lg:w-3/4">
+            <h3 class="font-primary text-2xl font-semibold">
+              Dr. Thomas Wexler, DDS
+            </h3>
+            <p class="mt-4">
+              With decades of hands-on experience, Dr. Thomas Wexler has built a
+              career on precision, innovation, and patient-first care. A
+              graduate of the New York University College of Dentistry, he
+              refined his expertise during an advanced residency at Mount Sinai
+              Hospital, focusing on restorative and cosmetic procedures. His
+              practice is rooted in a deep commitment to evolving with the
+              latest technology while maintaining a warm, approachable presence
+              that puts patients at ease.
+              <br />
+              <br />
+              Dr. Wexler’s journey in dentistry spans over 40 years, during
+              which he has cultivated a reputation for meticulous attention to
+              detail and a sharp eye for aesthetic dentistry. He thrives on
+              problem-solving complex dental cases, blending science and
+              artistry to create natural, functional smiles. Patients appreciate
+              his honest, straightforward approach—he believes in educating
+              rather than just treating, empowering individuals to take charge
+              of their oral health.
+              <br />
+              <br />
+              Beyond the dental chair, Dr. Wexler is always on the move. Whether
+              it's sailing along the East Coast, refining his golf swing, or
+              capturing breathtaking landscapes through his camera lens, he
+              approaches life with the same precision and enthusiasm that he
+              brings to his practice. A longtime resident of Westchester, he
+              enjoys weekend road trips, experimenting with new cuisines, and
+              spending time with his growing family. This version leans into a
+              refined yet modern style, making Dr. Wexler feel distinct and
+              engaging while maintaining a professional edge. Let me know if you
+              want a different spin!
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- End: Offer -->
-
-    <!-- Start: Our Team  -->
-
-    <section class="container mx-auto px-4 py-10 bg-white">
-      <div
-        class="flex items-start justify-between gap-x-6 flex-col lg:flex-row gap-y-6"
-      >
-        <div class="w-full lg:w-1/2">
-          <h3 class="font-primary text-3xl font-semibold our-team-title">
-            Our Team
-          </h3>
-
-          <p class="mt-6 our-team-text">
-            <b>
-              Dr. Chase Hughes, DDS, and the team at Dental Design are committed
-              to providing top-quality dental care in New York. We take a
-              comprehensive approach to oral health, combining expert treatment
-              with patient education to promote lasting wellness.
-            </b>
-            <br />
-            <br />
-            From the moment you walk through our doors, our friendly and
-            attentive staff ensure a comfortable, stress-free experience. We
-            believe in building genuine relationships with our patients,
-            listening to their concerns, and delivering personalized care at
-            every step—whether scheduling an appointment, completing paperwork,
-            undergoing an exam, or receiving treatment.
-            <br />
-            <br />
-            Our team stays at the forefront of advanced dental techniques,
-            allowing us to offer the latest innovations in dentistry. At Dental
-            Design, your health, comfort, and confidence in your smile are our
-            top priorities.
-          </p>
-
-          <div>
-            <a
-              href="./about-us"
-              class="!no-underline bg-primary-800 px-6 py-2 rounded-full text-neutral-50 mt-5 text-lg font-medium hover:bg-primary-900 transition-all min-w-36 inline-block text-center our-team-about-button-text"
-            >
-              Read More About Us
-            </a>
-          </div>
-        </div>
-        <div class="w-full lg:w-1/2 self-center our-team-photo">
-          <img src="/assets/images/our-team.jpg" alt="Team Image" />
-        </div>
-      </div>
-    </section>
-    <!-- End: Our Team -->
-
-    <!-- Start: Reviews -->
-
-    <section id="reviews" class="py-10 bg-white">
-      <h3
-        class="font-primary text-3xl font-semibold tracking-wide leading-relaxed text-center"
-      >
-        Some of our Reviews
-      </h3>
-
-      <div class="mt-12 container mx-auto px-4">
-        <!-- Swiper -->
-        <div class="swiper swiper-home-reviews min-h-[220px] w-full relative">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide px-4">
-              <div class="flex bg-neutral-50 h-[180px] rounded-2xl">
-                <div class="w-3/12 h-full overflow-hidden rounded-l-2xl">
-                  <img
-                    class="w-full h-full object-contain object-top"
-                    src="/assets/images/review-3.jpg"
-                    alt=""
-                    srcset=""
-                  />
-                </div>
-                <div class="w-9/12 py-4 overflow-y-auto no-scrollbar">
-                  <p class="px-2 pr-4 text-left">
-                    "Such a great experience at Dental Design! The staff was
-                    super friendly, and the whole visit was quick and painless.
-                    So glad I found this place!"
-                  </p>
-                  <h5 class="text-left font-medium mt-2.5 px-2">
-                    Sarah Hughes
-                  </h5>
-                  <div class="text-left px-1 mt-2">⭐⭐⭐⭐⭐</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide px-4">
-              <div class="flex bg-neutral-50 h-[180px] rounded-2xl">
-                <div class="w-3/12 h-full overflow-hidden rounded-l-2xl">
-                  <img
-                    class="w-full h-full object-contain object-top"
-                    src="/assets/images/review-4.jpg"
-                    alt=""
-                    srcset=""
-                  />
-                </div>
-                <div class="w-9/12 py-4 overflow-y-auto no-scrollbar">
-                  <p class="px-2 pr-4 text-left">
-                    "Such a great experience at Dental Design! The staff was
-                    super friendly, and the whole visit was quick and painless.
-                    So glad I found this place!"
-                  </p>
-                  <h5 class="text-left font-medium mt-2.5 px-2">Tina Robert</h5>
-                  <div class="text-left px-1 mt-2">⭐⭐⭐⭐⭐</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide px-4">
-              <div class="flex bg-neutral-50 h-[180px] rounded-2xl">
-                <div class="w-3/12 h-full overflow-hidden rounded-l-2xl">
-                  <img
-                    class="w-full h-full object-contain object-top"
-                    src="/assets/images/review-1.jpg"
-                    alt=""
-                    srcset=""
-                  />
-                </div>
-                <div class="w-9/12 py-4 overflow-y-auto no-scrollbar">
-                  <p class="px-2 pr-4 text-left">
-                    "Such a great experience at Dental Design! The staff was
-                    super friendly, and the whole visit was quick and painless.
-                    So glad I found this place!"
-                  </p>
-                  <h5 class="text-left font-medium mt-2.5 px-2">Mark River</h5>
-                  <div class="text-left px-1 mt-2">⭐⭐⭐⭐⭐</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Pagination Dots -->
-          <div class="swiper-pagination absolute bottom-0 py-2 w-full"></div>
-        </div>
-      </div>
-    </section>
-    <!-- End: Reviews -->
+    <!-- End: Doctors -->
 
     <!-- Start: Location & Contact Information  -->
     <section id="contact-us" class="bg-neutral-50 text-neutral-900 pt-4">
