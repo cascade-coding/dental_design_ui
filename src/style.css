@@ -36,7 +36,7 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-base);
   color: var(--color-primary);
 }
 
@@ -52,6 +52,16 @@ body {
       width: 160px;
     }
   }
+}
+
+/* scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 /* appointment form */
@@ -105,4 +115,9 @@ body {
 
 .swiper-pagination .swiper-pagination-bullet {
   background-color: var(--color-primary-400) !important;
+}
+
+/* contact form */
+.contact_field {
+  @apply w-full px-3 py-3 bg-neutral-50 text-neutral-900 outline-0 border-2 border-transparent border-b-primary-500 focus:border-b-primary-400 placeholder:text-neutral-900;
 }
